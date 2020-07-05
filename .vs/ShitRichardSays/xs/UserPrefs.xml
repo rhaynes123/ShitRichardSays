@@ -1,25 +1,24 @@
 ﻿<Properties StartupConfiguration="{015F2467-0A24-44F9-8B9A-864B0EDD6CBD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShitRichardSays/Pages/Error.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShitRichardSays/Startup.cs">
     <Files>
       <File FileName="ShitRichardSays/Pages/Index.razor" Line="15" Column="9" />
       <File FileName="ShitRichardSays/Shared/MainLayout.razor" Line="5" Column="7" />
       <File FileName="ShitRichardSays/Shared/NavMenu.razor" Line="13" Column="23" />
       <File FileName="ShitRichardSays/Pages/_Host.cshtml" Line="19" Column="10" />
-      <File FileName="ShitRichardSays/Pages/Error.razor" Line="1" Column="1" />
+      <File FileName="ShitRichardSays/Pages/Error.razor" Line="16" Column="5" />
+      <File FileName="ShitRichardSays/Startup.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShitRichardSays" expanded="True">
             <Node name="ShitRichardSays" expanded="True">
-              <Node name="Data" expanded="True">
-                <Node name="WeatherForecast.cs" selected="True" />
-              </Node>
               <Node name="Pages" expanded="True" />
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="Recordings" expanded="True" />
               </Node>
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
