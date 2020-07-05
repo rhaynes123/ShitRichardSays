@@ -9,12 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\RichardSaysFat.m4a" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="wwwroot\RichardSaysFat.m4a" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="wwwroot\Recordings\" />
   </ItemGroup>
 </Project>
