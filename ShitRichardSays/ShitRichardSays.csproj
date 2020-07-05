@@ -10,5 +10,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Recordings\" />
+    <Folder Include="Data\" />
   </ItemGroup>
 </Project>
