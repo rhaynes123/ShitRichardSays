@@ -2,16 +2,17 @@
 @using System.Collections.Generic
 @using ShitRichardSays.Data
 @inject RecordingService recordingService
-@code{
-    private Dictionary<string, string> RecordingsList = new Dictionary<string, string>();
+@code
+{
+    private Dictionary<string, string> Sayings = new Dictionary<string, string>();
     
 }
-<h1>Hello, world!</h1>
+<h1>Hello, world It's Richard!</h1>
 <p>
     Welcome to a website built around the things I say. If you know me, you know that I'm am a very harsh person.
     If your going to be made uncomfortable please feel free to leave my site. Thank and mind your business.
 </p>
-@if (RecordingsList.Count <= 0)
+@if (Sayings.Count <= 0)
 {
     <button class="btn btn-primary" @onclick="ShowRecordings">Show Shit Richard Says</button>
 }
@@ -27,8 +28,9 @@ else
         </tr>
     </thead>
     <tbody>
-   @foreach (var recordings in RecordingsList)
+   @foreach (var recordings in Sayings)
    {
+
         <tr>
             <td>@recordings.Key</td>
             <td>
@@ -45,20 +47,28 @@ else
 {
     public void ShowRecordings()
     {
+
         //var AllRecordings = await recordingService.GetAllRecordings();
         //foreach (var saying in AllRecordings)
         //{
         //    RecordingsList.Add(saying.Title, saying.AudioFile);
         //}
 
-        RecordingsList.Add("Richard Calling Things Stupid", "Recordings/ThisIsStupid.m4a");
-        RecordingsList.Add("Richard Saying Fat", "Recordings/RichardSaysFat.m4a");
-        RecordingsList.Add("Richard Calling People Dumbasses", "Recordings/Dumbass.m4a");
-        RecordingsList.Add("Richard Calling People  Stupid", "Recordings/CallingPeopleIdiots.m4a");
+        Sayings.Add("Richard Calling Things Stupid", "Recordings/ThisIsStupid.m4a");
+        Sayings.Add("Richard Saying Fat", "Recordings/RichardSaysFat.m4a");
+        Sayings.Add("Richard Calling People Dumbasses", "Recordings/Dumbass.m4a");
+        Sayings.Add("Richard Calling People  Stupid", "Recordings/CallingPeopleIdiots.m4a");
+
+        Sayings.Add("Richard Saying  This is Shit", "Recordings/ThisShit.m4a");
+        Sayings.Add("Richard Saying This Fucking stupid", "Recordings/FStupid.m4a");
+        Sayings.Add("Richard Saying What", "Recordings/What.m4a");
+        Sayings.Add("Richard Richard Saying Why", "Recordings/Why.m4a");
+
+        Sayings.Add("Richard saying move on", "Recordings/MoveOn.m4a");
 
     }
     public void HideRecordings()
     {
-        RecordingsList.Clear();
+        Sayings.Clear();
     }
 }
